@@ -1,1 +1,62 @@
-<p>client works!</p>
+
+<div class="display-6 bg-secondary text-center text-light p-3">Cadastro de Clientes</div>
+ 
+ 
+<form [formGroup] ="formGroupClient">
+ 
+  <div class="mb-3">
+    <label for="name" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="name" formControlName="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="rg" class="form-label">RG</label>
+    <input type="text" class="form-control" id="rg" formControlName="rg" name="rg">
+  </div>
+  <div class="mb-3">
+    <label for="cpf" class="form-label">CPF</label>
+    <input type="text" class="form-control" id="cpf" formControlName="cpf" name="cpf">
+  </div>
+  <div class="mb-3">
+    <label for="endereco" class="form-label">Endereço</label>
+    <input type="text" class="form-control" id="endereco" formControlName="endereco" name="endereco">
+  </div>
+  <div class="mb-3">
+    <label for="cep" class="form-label">CEP</label>
+    <input type="text" class="form-control" id="cep" formControlName="cep" name="cep">
+  </div>
+  <button class="btn btn-primary me-2" (click)="save()">Salvar</button>
+  <button class="btn btn-primary" (click)="cancel()">Cancelar</button>
+ 
+</form>
+ 
+<body>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col-1">id</th>
+        <th scope="col-6">Nome</th>
+        <th scope="col-6">RG</th>
+        <th scope="col-6">CPF</th>
+        <th scope="col-5">Endereço</th>
+        <th scope="col-6">CEP</th>
+        <th scope="col-2" class="text-center">Opções</th>
+ 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of client">
+        <th scope="row" class="col-1">{{p.id}}</th>
+        <td class="col-1">{{p.name}}</td>
+        <td class="col-1">{{p.rg}}</td>
+        <td class="col-1">{{p.cpf}}</td>
+        <td class="col-1">{{p.endereco}}</td>
+        <td class="col-1">{{p.cep}}</td>
+        <td class="text-end col-2">
+        <button class="btn btn-danger me-2" (click) = "delete(p)">Remover</button>
+        <button class="btn btn-success" (click) = "edit(p)">Editar</button>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+ 
