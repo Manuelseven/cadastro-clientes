@@ -1,19 +1,44 @@
 {
-  "posts": [
+  "client": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Lucas",
+      "rg": "3829390209",
+      "cpf": "32993289",
+      "endereco": "Jardim Santa Rosália",
+      "cep": "18095-040",
+      "id": 4
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Nicolas Fernandes",
+      "rg": "199999",
+      "cpf": "54829230",
+      "endereco": "Jardim Harmonia",
+      "cep": "18293023",
+      "id": 5
+    },
+    {
+      "name": "Fernando Torres\t",
+      "rg": "90030735",
+      "cpf": null,
+      "endereco": "Jardim Nathalia\t",
+      "cep": "2503125",
+      "id": 6
+    },
+    {
+      "name": "Pedro Santos\t",
+      "rg": "123",
+      "cpf": "3729392399",
+      "endereco": "Jardim Nathalia\t",
+      "cep": "18293023\t",
+      "id": 7
+    },
+    {
+      "name": "manuel",
+      "rg": "33",
+      "cpf": "311",
+      "endereco": "Rua Angelica",
+      "cep": "13312118",
+      "id": 8
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

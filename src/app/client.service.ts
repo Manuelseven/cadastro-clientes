@@ -10,7 +10,7 @@ export class ClientService {
  
  
   client : Client[] = [];
-  baseUrl: string = "http://localhost:3000/client";
+  baseUrl: string = "http://localhost:8080/clients";
  
   constructor(private http: HttpClient) {
  
